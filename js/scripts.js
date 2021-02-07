@@ -1,4 +1,6 @@
 $(function() {
+
+/*   script for carousel  */
   $(".carousel").carousel( { interval: 2000, pause: "false" } );
   $("#carouselButton").click(function(){
       if ($("#carouselButton").children("i").hasClass("fa-pause")) {
@@ -11,4 +13,17 @@ $(function() {
           $("#carouselButton").children("i").addClass("fa-pause"); 
       }
   });
+
+/* script reservation modal */ 
+ $("#reserveButton").click(function(){
+    $("#reserveModal").modal({ show: true, backdrop: "static"} );
+  });
+
+
+ /* script login modal  */
+  $("#loginButton").click(function(){
+    $("#loginModal").modal({ show: true, backdrop: "static"} );
+  });
+  
+
 });
